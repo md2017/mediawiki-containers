@@ -91,7 +91,7 @@ start () {
         -e MEDIAWIKI_DB_PASSWORD=password \
         -e MEDIAWIKI_RESTBASE_URL=http://mediawiki-node-services.docker:7231/localhost/v1 \
         --dns "$DNS" \
-        -p 80:80 \
+        -p 8081:80 \
         wikimedia/mediawiki
 
     echoinfo "Starting mediawiki-node-services container.."
