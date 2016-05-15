@@ -136,7 +136,7 @@ install_git() {
 check_out_mediawiki_containers() {
     if [ ! -d "$BASEDIR" ];then
         echoinfo "Cloning mediawiki-containers to $BASEDIR.."
-        git clone https://github.com/wikimedia/mediawiki-containers.git "$BASEDIR"
+        git clone https://github.com/md2017/mediawiki-containers.git "$BASEDIR"
     else
         cd "$BASEDIR"
         echoinfo "Updating $BASEDIR.."
